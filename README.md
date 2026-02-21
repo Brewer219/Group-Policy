@@ -98,18 +98,15 @@ Verify the unlock by attempting to login using test user's credentials.</p>
 
 <h3>5. LOG OBSERVATION AND ANALYSIS </h3>
 <p>Review authentication and security logs on the domain controller and client machine using Event Viewer to identify lockout events, failed login attempts, and account status changes. Open Event Viewer on "vm-dc-1". Expand "Windows Log", select "Security" to view the logs. Right-click "Security" and search for consecutive Audit Failures.</p>
+<img width="382" height="453" alt="Step 12 Group Policy and Managing meg dev enabled account" src="https://github.com/user-attachments/assets/ee724b65-94cd-4492-8d31-d9307f09cdea" />
 
-<details><summary>See screenshots</summary>
-<img src="images/Step 5a.PNG" width="60%" >
-</details> 
+
 
 Failed logins, fall under "Credential Validation" in the Task Category with "Audit Failure" as the Keyword. Successful logins will have "Audit Success" as the Keyword.
 
 Open Event Viewer on our Client. As a test user, you will be denied access. Run Event Viewer as Admin, and use Jane Doe's credentials. Look for the consecutive Audit Failures.
 
-<details><summary>See screenshots</summary>
-<img src="images/Step 5b.PNG" width="60%" >
-</details> 
+
 
 <h3>Bonus - Observing External Authentication Attempts (Bots)</h3>
 
