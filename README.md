@@ -63,8 +63,6 @@ With the domain environment already established, this project simulates common a
 <img width="318" height="299" alt="Step 5 Group Policy Account Lockout Policy duration" src="https://github.com/user-attachments/assets/1d213a5e-8e74-4159-8a1f-e749687753e3" />
 
 <p>Expand Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies, and here we'll define an Account Lockout Threshold policy to enforce automatic lockouts after 5 failed login attempts.</p>
-<img width="413" height="343" alt="CyberLab password lockout" src="https://github.com/user-attachments/assets/ea0708c9-5a88-43e3-b53c-7aceedeb2455" />
-
 
 > [!NOTE] 
 > After applying settings. Observe the "Account lockout duration" and "Reset Account lockout counter after" settings change.
@@ -72,10 +70,8 @@ With the domain environment already established, this project simulates common a
 
 <h3>2. SIMULATE FAILED LOGINS AND LOCKOUT </h3>
 <p>Select any username from our _EMPLOYEES OU and Remote Desktop(RDP) into "vm-client-1",intentionally enter incorrect credentials multiple times to trigger the configured lockout threshold. On "vm-dc-1", confirm the account status within Active Directory. Right-click the affected user and select "Properties", review the Account tab. Observe the checkbox and Account status "This account is currently locked out on this Active Directory Domain Controller".</p>
+<img width="413" height="343" alt="CyberLab password lockout" src="https://github.com/user-attachments/assets/ea0708c9-5a88-43e3-b53c-7aceedeb2455" />
 
-<details><summary>See screenshots</summary>
-<p align="left"><img src="images/Step 2a.PNG" width="40%" ><img src="images/Step 2aa.PNG" width="40%" ></p>
-</details> 
 
 <h3>3. ACCOUNT RECOVERY ACTIONS </h3>
 <p>Mark the checkbox to unlock the affected account, and Apply. Select "OK" to close Properties window. Next, right-click the affected user and choose “Reset Password…”. This window allows both a password reset and account unlock simultaneously; for this demonstration, no changes will be made here.
