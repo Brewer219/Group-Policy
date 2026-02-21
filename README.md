@@ -59,15 +59,11 @@ With the domain environment already established, this project simulates common a
 <h3>1. CONFIGURE ACCOUNT LOCKOUT POLICY </h3>
 <p>Under the default configuration, users can enter an incorrect password an unlimited number of times. In this step, a lockout policy will be configured to restrict failed login attempts. Access the Group Policy Management settings on the domain controller by searching, "Group Policy Managment".  Expand forest > domain > mydomain.com, and right-click Default Domain Policy and select "Edit". </p>
 
-<details><summary>See screenshots</summary>
-<img src="images/Step 1a.PNG" width="60%" >
-</details> 
+
+<img width="318" height="299" alt="Step 5 Group Policy Account Lockout Policy duration" src="https://github.com/user-attachments/assets/1d213a5e-8e74-4159-8a1f-e749687753e3" />
 
 <p>Expand Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies, and here we'll define an Account Lockout Threshold policy to enforce automatic lockouts after 5 failed login attempts.</p>
 
-<details><summary>See screenshots</summary>
-<img src="images/Step 1b.PNG" width="60%" >
-</details> 
 
 > [!NOTE] 
 > After applying settings. Observe the "Account lockout duration" and "Reset Account lockout counter after" settings change.
