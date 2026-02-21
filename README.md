@@ -63,6 +63,7 @@ With the domain environment already established, this project simulates common a
 <img width="318" height="299" alt="Step 5 Group Policy Account Lockout Policy duration" src="https://github.com/user-attachments/assets/1d213a5e-8e74-4159-8a1f-e749687753e3" />
 
 <p>Expand Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies, and here we'll define an Account Lockout Threshold policy to enforce automatic lockouts after 5 failed login attempts.</p>
+<img width="413" height="343" alt="CyberLab password lockout" src="https://github.com/user-attachments/assets/ea0708c9-5a88-43e3-b53c-7aceedeb2455" />
 
 
 > [!NOTE] 
