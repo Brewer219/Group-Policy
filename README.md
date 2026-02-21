@@ -89,12 +89,12 @@ Verify the unlock by attempting to login using test user's credentials.</p>
 > [!NOTE] 
 > Opened PowerShell and we can see the test user is logged in. 
 
-<h3>4. ENABLE AND DISABLE USER ACCOUNTS</h3>
+<h3>4. DISABLE AND Enable USER ACCOUNTS</h3>
 <p>Temporarily disable the same user account in Active Directory, attempt authentication to observe the system response, then re-enable the account and confirm restored access.</p>
+<img width="393" height="477" alt="Step 10 Group Policy disabling meg dev user account by right clicking on user" src="https://github.com/user-attachments/assets/6e373ef8-cd67-4327-b0eb-40cc323d2d25" />
+<img width="382" height="453" alt="Step 12 Group Policy and Managing meg dev enabled account" src="https://github.com/user-attachments/assets/44cd2376-bfa9-4907-927e-de64dda12390" />
 
-<details><summary>See screenshots</summary>
-<p align="left"><img src="images/Step 4a.PNG" width="40%" ><img src="images/Step 4aa.PNG" width="40%" ></p>
-</details> 
+ 
 
 <h3>5. LOG OBSERVATION AND ANALYSIS </h3>
 <p>Review authentication and security logs on the domain controller and client machine using Event Viewer to identify lockout events, failed login attempts, and account status changes. Open Event Viewer on "vm-dc-1". Expand "Windows Log", select "Security" to view the logs. Right-click "Security" and search for consecutive Audit Failures.</p>
