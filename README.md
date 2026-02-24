@@ -125,6 +125,10 @@ Directory.
 2. Attempt authentication to see the system response.
 3. Re-enable the account and confirm restored access.
 
+<details><summary>See screenshots</summary>
+<img src="images/Step 3b.PNG" width="60%" >
+</details> 
+
 <img width="393" height="377" alt="Step 10 Group Policy disabling meg dev user account by right clicking on user" src="https://github.com/user-attachments/assets/6e373ef8-cd67-4327-b0eb-40cc323d2d25" />
 
 <img width="382" height="453" alt="Step 12 Group Policy and Managing meg dev enabled account" src="https://github.com/user-attachments/assets/44cd2376-bfa9-4907-927e-de64dda12390" />
