@@ -83,6 +83,10 @@ policy to observe it effects.
  4. Right-click the affected user, select
  **Properties**, and review the **Account** tab to 
  see the lockout status.
+ <details><summary>See screenshots</summary>
+<img src="images/Step 3a.PNG" width="60%" >
+</details> 
+ 
 <img width="413" height="343" alt="CyberLab password lockout" src="https://github.com/user-attachments/assets/ea0708c9-5a88-43e3-b53c-7aceedeb2455" />
 
 
@@ -121,7 +125,8 @@ Directory.
 2. Attempt authentication to see the system response.
 3. Re-enable the account and confirm restored access.
 
-<img width="393" height="477" alt="Step 10 Group Policy disabling meg dev user account by right clicking on user" src="https://github.com/user-attachments/assets/6e373ef8-cd67-4327-b0eb-40cc323d2d25" />
+<img width="393" height="377" alt="Step 10 Group Policy disabling meg dev user account by right clicking on user" src="https://github.com/user-attachments/assets/6e373ef8-cd67-4327-b0eb-40cc323d2d25" />
+
 <img width="382" height="453" alt="Step 12 Group Policy and Managing meg dev enabled account" src="https://github.com/user-attachments/assets/44cd2376-bfa9-4907-927e-de64dda12390" />
 
  
@@ -141,15 +146,32 @@ for consecutive **Audit Failures**.
 the keyword.
 4. Open Event Viewer on the client machine and 
 observe the failed login attempts.
-
+<details><summary>See screenshot</summary>
+<img src="images/Step 3b.PNG" width="60%" >
+</details> 
 
 <img width="382" height="453" alt="Step 12 Group Policy and Managing meg dev enabled account" src="https://github.com/user-attachments/assets/ee724b65-94cd-4492-8d31-d9307f09cdea" />
 
 
 
 Failed logins, fall under "Credential Validation" in the Task Category with "Audit Failure" as the Keyword. Successful logins will have "Audit Success" as the Keyword.
+<details><summary>See screenshot</summary>
+<img src="images/Step 3b.PNG" width="60%" >
+</details> 
+
+<img width="360" height="335" alt="Group Policy explore event view logs redo" src="https://github.com/user-attachments/assets/64ae4631-c997-47b7-bee1-7466fb1293a0" />
+
 
 Open Event Viewer on our Client. As a test user, you will be denied access. Run Event Viewer as Admin, and use Jane Doe's credentials. Look for the consecutive Audit Failures.
+
+<details><summary>See screenshots</summary>
+<img src="images/Step 3b.PNG" width="60%" >
+</details> 
+
+<img width="357" height="339" alt="Group Policy logged in as jane admin in client vm to see meg dev audit failures redo" src="https://github.com/user-attachments/assets/24e64027-4ab2-4e22-bcf4-ee3dc5ff5765" />
+
+<img width="350" height="337" alt="Group Policy jane admin logged in to event viewer see megdev audit failure from the IP address" src="https://github.com/user-attachments/assets/a9de59ec-b3c3-4fa8-9330-2e8f5b7133ee" />
+
 
 
 
