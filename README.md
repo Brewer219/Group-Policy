@@ -173,35 +173,6 @@ Open Event Viewer on our Client. As a test user, you will be denied access. Run 
 <img width="350" height="337" alt="Group Policy jane admin logged in to event viewer see megdev audit failure from the IP address" src="https://github.com/user-attachments/assets/a9de59ec-b3c3-4fa8-9330-2e8f5b7133ee" />
 
 
-
-
-<h6>Bonus - Observing External Authentication Attempts (Bots)</h6>
--Objective: Analyze Failed login attempts due to external exposure.
--Instructions:
-1. Review Event Viewer logs for a high number of
-consecutive **Audit Failure** logs.
-2. Note the these logs result from automated
-bots scanning for vulnerable systems due to RDP
-exposure.
-3. Highlight the importance of strong
-authentication practices and firewall
-configurations.
-
-
-<details><summary>See screenshots</summary>
-<img src="images/Step 5c.PNG" width="60%" >
-</details>
-
-> [!NOTE]
-> From the Domain Controller VM, the username “Sales” appears because the Domain Controller is responsible for credential validation and logs the actual username submitted during each authentication attempt.
-
-<details><summary>See screenshots</summary>
-<img src="images/Step 5d.PNG" width="60%" >
-</details> 
-
-> [!NOTE]
-> From the Client 1 VM, no username because the attempt was rejected early in authetication handshake.
-
 > [!NOTE]
 > The Windows Firewall was temporarily disabled in this lab to simplify connectivity and reduce rule conflicts. This is not required for Active Directory and would not be recommended in a production environment.
 
