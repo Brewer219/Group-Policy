@@ -105,12 +105,8 @@ the test user's credentials.
 <details><summary>See screenshots</summary>
 <img src="images/Step 3a.PNG" width="60%" >
 </details> 
+<img width="403" height="464" alt="AD Admin Center fine grain policy lockout for only fed toli login attempts failed" src="https://github.com/user-attachments/assets/126e95e9-6af2-484c-95c8-e8bfef88fc4a" />
 
-Verify the unlock by attempting to login using test user's credentials.</p>
-
-<details><summary>See screenshots</summary>
-<img src="images/Step 3b.PNG" width="60%" >
-</details> 
 
 > [!NOTE] 
 > Opened PowerShell and we can see the test user is logged in. 
