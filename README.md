@@ -1,7 +1,5 @@
-<p align="center">
-<img width="600" alt="Microsoft Active Directory Logo" src="images/active-directory-seeklogo.png" />
+<img width="537" height="250" alt="Microsoft Active Directory" src="https://github.com/user-attachments/assets/5e73ff3f-8a7b-4492-b989-5dbaea765632" />
 
-</p>
 
 <h1>Group Policy and Account Management</h1>
 This project continues from the previously established Active Directory Domain Services environment hosted in Microsoft Azure. The lab demonstrates how Group Policy can be used to enforce account lockout thresholds, how administrators unlock and reset accounts, and how enabling or disabling accounts impacts authentication. Additionally, system and security logs are reviewed to understand how these events are recorded on both the Domain Controller and client machines. As an additional observation, external failed login attempts were visible in Event Viewer due to Remote Desktop exposure, providing practical insight into real-world security considerations such as firewall rules and account lockout policies.
